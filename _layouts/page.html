@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 
+{% set prefix = '' %}
+{% if site.baseurl %}
+    {%   set prefix = '/' + site.baseurl %}
+{% endif %}
+
+
 {% block body %}
 
 <div class="slider">
 
     {% for image in this["slider_images"] %}
         <div class="slider-image"
-             style="background-image: url(/{{ image }}); background-position:
+             style="background-image: url({{ prefix }}/{{ image }}); background-position:
              center center;">
         </div>
     {% endfor %}

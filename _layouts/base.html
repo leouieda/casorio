@@ -20,16 +20,21 @@
         {% endblock %}
     {% endblock %}
 
-    <title>{{ site.title|striptags }}</title>
-    <link rel="shortcut icon" href="/images/favicon.png">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    {% set prefix = '' %}
+    {% if site.baseurl %}
+        {%   set prefix = '/' + site.baseurl %}
+    {% endif %}
+
+    <title>{{ site["title"]|striptags }}</title>
+    <link rel="shortcut icon" href="{{ prefix }}/images/favicon.png">
+    <link rel="stylesheet" href="{{ prefix }}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ prefix }}/css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 
     <!--Include the Font Awesome and Academicons CSS-->
-    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ prefix }}/css/font-awesome/css/font-awesome.min.css">
 
     <!-- Google Analytics tracking code -->
     <script>
@@ -59,13 +64,13 @@
     <!-- ================================================== -->
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="{{ prefix }}/js/jquery.min.js"></script>
+    <script src="{{ prefix }}/js/bootstrap.min.js"></script>
     <!-- For the altmetric badge in articles -->
     <script type='text/javascript'
      src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
     <!-- For the slider -->
-    <script src="/js/slider.js"></script>
+    <script src="{{ prefix }}/js/slider.js"></script>
 
 </body>
 </html>

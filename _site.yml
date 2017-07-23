@@ -2,9 +2,7 @@ title: Leo & Carol
 
 url: http://www.leouieda.com
 
-date_en: August 26, 2017
-
-date_br: 26 de Agosto, 2017
+baseurl: casorio
 
 author: Leonardo Uieda & Ana Caroline Colombo
 
@@ -20,24 +18,20 @@ ignore_patterns: ["README.md", "ci", "environment.yml", "miniconda.sh"]
 
 strict_undefined: true
 
-menulinks: [
-    ['/about', 'About'],
-    ['/blog', 'Blog'],
-    ['/papers', 'Papers'],
-    ['/talks', 'Talks'],
-    ['/posters', 'Posters'],
-    ['/teaching', 'Teaching'],
-    ['/software', 'Software'],
-    ['/contact', 'Contact'],
-    ]
-
 reflinks:
-    leouieda:
-        url: http://www.leouieda.com
-        title: Leonardo Uieda
-    content_license:
-        url: http://creativecommons.org/licenses/by/4.0/
-        title: CC-BY License
     site_repo:
         url: https://github.com/leouieda/casorio
         title: leouieda/casorio
+
+# Define a few things in english and portuguese
+date_en: August 26, 2017
+
+date_br: 26 de Agosto, 2017
+
+where_en: Hawaii
+
+where_br: Havaí
+
+description_en: are getting married
+
+description_br: irão se casar
