@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="slider">
+
+    {% for image in this["slider_images"] %}
+        <div class="slider-image"
+             style="background-image: url(/{{ image }}); background-position:
+             center center;">
+        </div>
+    {% endfor %}
+
+    <div class="title-area text-center container">
+        <h1 class="our-names">{{ this.title }}</h1>
+        <div class="what-when">
+            {% block title_area %}
+            {% endblock %}
+        </div>
+    </div>
+
+</div>
+
+{{ this.body }}
+
+{% endblock %}

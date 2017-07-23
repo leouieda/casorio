@@ -1,0 +1,40 @@
+language: generic
+
+sudo: false
+
+notifications:
+  email: false
+
+# Only build pushes from the master branch. PRs are always built.
+branches:
+  only:
+    - master
+
+env:
+  global:
+    # Github Token for pushing the built docs
+    - secure: "hcJ3iciyCGt9X3/g7FZcQaazaZ7mnIOQrc+SetLA/6BDHfQAZfMiT5Nc0aaHaqTWRs6bkG+ibQjqXOv44p++lZmG1nM9PzZarGVkElmoj0ZE2GScgKqWucN5s9ivXJEYOWmqInJaxOdR5/oZDKkKsi2xBOEYvZw3PRsxxYUKG6FtQB2Wr7bN1rtyQpichFfEVDzP4E78UGykKXXkP4DJ3b/DQ1eXp5zASlVrHBHBpn9hEUKoK/hVnqsan4DibJAj5e1Fh9uaq9fh0q1z2bOXPwVmNlSGyuYt3RbsuN0aL3NinTFnF7Sm0NA52sPGc8Ao29KfKqt7j+6ofXTjIqgnCkt/G6UKLdbEkYXjJ57Bm6jn1dc7/IXe/wGR4ZOeW1yIkylx9DuE9OeegJLpfYLWsDwvSKvvQRWKqWHgRMU5RIqQaef5HuFUNOrWyiRhX4z4Bv66bwbsMwF0kBykhTavZq98tI17Zrs01JYLctIMtFzxswUqqI2otF1/CwBv4rcbei8v2uv/bAq8I+l53H8ndRCXjnSeflVxoKKsm0f+fFmKZvJEfUXinEM2zHTLEHfm4ASuNrnMigFzQ5tE1CokLDmqOhr4h7Pz4Uq32d4G2HOmwZEisklYwGTU1TbO4soO0Zk1R66co3qwLt75znVbWz61ee89MGIIjXIP77BbtFg="
+
+before_install:
+  # Get Miniconda from Continuum
+  # Need to source the script to set the PATH variable in this environment
+  # (not the scripts environment)
+  - source ci/install-miniconda.sh
+
+install:
+  # Update conda itself
+  - conda update --yes conda
+  # Create a conda env based on environment.yml
+  - conda env create
+  - source activate casorio
+
+script:
+  - make
+
+deploy:
+  # Push the built HMTL to Github pages
+  - provider: script
+    script: ci/deploy-gh-pages.sh
+    skip_cleanup: true
+    on:
+      branch: master

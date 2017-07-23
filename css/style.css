@@ -1,0 +1,152 @@
+/* To stick the footer to the bottom of the page */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    line-height: 31.5px;
+    /* Margin bottom by footer height with a little room to accomodate small
+     * screens */
+    margin-bottom: 50px;
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    margin-bottom: 21px;
+}
+
+h2 {
+    margin-top: 31.5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 35%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,
+     rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
+}
+
+p {
+    /*margin-bottom: 31.5px;*/
+}
+
+pre {
+    margin-bottom: 31.5px;
+}
+
+ul {
+    margin-bottom: 31.5px;
+    padding-left: 20px;
+}
+
+blockquote {
+    font-size: 18px;
+    line-height: 31.5px;
+    padding: 0px 21px;
+    color: #666;
+}
+
+
+.fa-ul {
+    margin-top: 10px;
+}
+
+.fa-ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: #785A72;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    color: #afdddd;
+    /* To stick the footer to the bottom of the page */
+    position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    min-height: 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+
+.container-fluid {
+    padding: 0;
+}
+
+.embed-responsive {
+    margin-bottom: 31.5px;
+}
+
+.slider {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 90px;
+}
+
+.slider-image {
+    width: 100%;
+    min-height: 700px;
+    background-size: cover;
+}
+
+.title-area {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.our-names {
+    font-family: 'Engagement', cursive;
+    font-size: 130px;
+}
+
+.what-when > p {
+    font-size: 22px;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-bottom: 5px;
+}
+
+.what-when > hr {
+    width: 35%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+#disqus_thread {
+    margin-top: 90px;
+}
