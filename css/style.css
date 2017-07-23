@@ -118,21 +118,21 @@ ul {
     color: #ffffff;
 }
 
-.slider {
+.banner {
+    margin: 0;
     width: 100%;
-    height: 700px;
+    height: 100vh;
+    background-color: #93ABA5;
 }
 
-.slider-image {
-    width: 100%;
-    min-height: 700px;
-    background-size: cover;
-    opacity: 1;
+.slider {
+    margin: 0;
+    list-style:  none;
 }
 
 .title-area {
     position: absolute;
-    top: 150px;
+    top: 20vh;
     width: 100%;
     color: #ffffff;
 }

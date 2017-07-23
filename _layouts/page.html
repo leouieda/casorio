@@ -6,16 +6,60 @@
 {% endif %}
 
 
+{% block custom_css %}
+    {% set interval = 6 %}
+    {% set anim_time = 6*interval %}
+        .slider li span {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: none;
+            opacity: 0;
+            -webkit-backface-visibility: hidden;
+            -webkit-animation: imganim {{ anim_time }}s linear infinite 0s;
+            -moz-animation: imganim {{ anim_time }}s linear infinite 0s;
+            -o-animation: imganim {{ anim_time }}s linear infinite 0s;
+            -ms-animation: imganim {{ anim_time }}s linear infinite 0s;
+            animation: imganim {{ anim_time }}s linear infinite 0s;
+        }
+    {% for prefix in ["-webkit-", "-moz-", "-o-", "-ms-", ""] %}
+        @{{ prefix }}keyframes imganim {
+            0% { opacity: 0; {{ prefix }}animation-timing-function: ease-in; }
+            8% { opacity: 1; {{ prefix }}animation-timing-function: ease-out; }
+            17% { opacity: 1 }
+            25% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+    {% endfor %}
+    {% set delay = 1 %}
+    {% for image in this.slider_images %}
+        {% set timer = (loop.index - 1)*interval + delay %}
+        .slider li:nth-child({{ loop.index }}) span {
+            background-image: url({{ prefix }}/{{ image }});
+            -webkit-animation-delay: {{ timer }}s;
+            -moz-animation-delay: {{ timer }}s;
+            -o-animation-delay: {{ timer }}s;
+            -ms-animation-delay: {{ timer }}s;
+            animation-delay: {{ timer }}s;
+        }
+    {% endfor %}
+{% endblock %}
+
+
 {% block body %}
 
-<div class="slider">
+<div class="banner">
 
-    {% for image in this["slider_images"] %}
-        <div class="slider-image"
-             style="background-image: url({{ prefix }}/{{ image }}); background-position:
-             center center;">
-        </div>
+    <ul class="slider">
+    {% for image in this.slider_images %}
+        <li><span></span></li>
     {% endfor %}
+    </ul>
 
     <div class="title-area text-center container">
         <h1 class="our-names">{{ this.title }}</h1>
@@ -103,7 +147,7 @@
         <div id="disqus_thread"></div>
         <script>
             var disqus_config = function () {
-                this.page.url = {{ site.url }}/{{ this.url }};
+                this.page.url = {{ site.url }}{{ this.url }};
                 this.page.identifier = {{ this.id }};
             };
             (function() { // DON'T EDIT BELOW THIS LINE

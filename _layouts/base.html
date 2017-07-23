@@ -31,6 +31,11 @@
     <link rel="stylesheet" href="{{ prefix }}/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ prefix }}/css/style.css">
 
+    <style>
+        {% block custom_css %}
+        {% endblock %}
+    </style>
+
     <link href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 
@@ -67,11 +72,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="{{ prefix }}/js/jquery.min.js"></script>
     <script src="{{ prefix }}/js/bootstrap.min.js"></script>
-    <!-- For the altmetric badge in articles -->
-    <script type='text/javascript'
-     src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-    <!-- For the slider -->
-    <script src="{{ prefix }}/js/slider.js"></script>
 
 </body>
 </html>
