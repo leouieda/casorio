@@ -24,14 +24,47 @@ reflinks:
         title: leouieda/casorio
 
 # Define a few things in english and portuguese
-date_en: August 26, 2017
+when:
+    en: August 26, 2017
+    br: 26 de Agosto, 2017
 
-date_br: 26 de Agosto, 2017
+where:
+    en: Hawaii
+    br: Havaí
 
-where_en: Hawaii
+what:
+    en: are getting married
+    br: irão se casar
 
-where_br: Havaí
+about:
+    title:
+        en: about us
+        br: sobre nós
 
-description_en: are getting married
+event:
+    title:
+        en: the event
+        br: o evento
 
-description_br: irão se casar
+gifts:
+    title:
+        en: gifts
+        br: presentes
+
+gallery:
+    title:
+        en: gallery
+        br: galeria
+
+message:
+    title:
+        en: leave your message
+        br: deixe sua mensagem
+
+rsvp:
+    text: RSVP
+    form: meh
+
+footer:
+    en: '<a href="/casorio/br">Clique aqui para uma versão em <strong>Portugues</strong></a>.'
+    br: '<a href="/casorio">Click here for a version in <strong>English</strong></a>.'

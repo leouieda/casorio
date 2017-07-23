@@ -1,3 +1,5 @@
+/* http://www.colourlovers.com/palette/2375744/Its_The_Spirit */
+
 /* To stick the footer to the bottom of the page */
 html {
     position: relative;
@@ -9,21 +11,21 @@ body {
     line-height: 31.5px;
     /* Margin bottom by footer height with a little room to accomodate small
      * screens */
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     font-family: 'PT Serif', serif;
 }
 
 footer {
     width: 100%;
-    background-color: #785A72;
-    padding-top: 12px;
-    padding-bottom: 0px;
+    background-color: #87888F;
+    padding-top: 20px;
+    padding-bottom: 10px;
     color: #dddddd;
     /* To stick the footer to the bottom of the page */
     position: absolute;
     bottom: 0;
     /* Set the fixed height of the footer here */
-    min-height: 50px;
+    min-height: 100px;
     font-size: 16px;
     line-height: 24px;
 }
@@ -61,7 +63,7 @@ h3 {
 hr {
     width: 35%;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right,
@@ -72,22 +74,21 @@ p {
     /*margin-bottom: 31.5px;*/
 }
 
-pre {
-    margin-bottom: 31.5px;
+a {
+    color: #782a72;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    color: #782a72;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
 }
 
 ul {
     margin-bottom: 31.5px;
     padding-left: 20px;
 }
-
-blockquote {
-    font-size: 18px;
-    line-height: 31.5px;
-    padding: 0px 21px;
-    color: #666;
-}
-
 
 .fa-ul {
     margin-top: 10px;
@@ -97,25 +98,36 @@ blockquote {
     margin-bottom: 5px;
 }
 
-
-.container-fluid {
-    padding: 0;
+.bloco {
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    text-align: center;
 }
 
-.embed-responsive {
-    margin-bottom: 31.5px;
+.event {
+    background-color: #DFF5E7;
+}
+
+.gallery {
+    background-color: #DFF5E7;
+}
+
+.rsvp {
+    background-color: #93ABA5;
+    color: #ffffff;
 }
 
 .slider {
     width: 100%;
     height: 700px;
-    margin-bottom: 90px;
 }
 
 .slider-image {
     width: 100%;
     min-height: 700px;
     background-size: cover;
+    opacity: 1;
 }
 
 .title-area {

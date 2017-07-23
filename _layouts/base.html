@@ -20,12 +20,13 @@
         {% endblock %}
     {% endblock %}
 
+    <title>{{ site.title|striptags }}</title>
+
     {% set prefix = '' %}
     {% if site.baseurl %}
         {%   set prefix = '/' + site.baseurl %}
     {% endif %}
 
-    <title>{{ site["title"]|striptags }}</title>
     <link rel="shortcut icon" href="{{ prefix }}/images/favicon.png">
     <link rel="stylesheet" href="{{ prefix }}/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ prefix }}/css/style.css">

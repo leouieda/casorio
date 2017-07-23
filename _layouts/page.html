@@ -20,13 +20,102 @@
     <div class="title-area text-center container">
         <h1 class="our-names">{{ this.title }}</h1>
         <div class="what-when">
-            {% block title_area %}
-            {% endblock %}
+            <p>
+            {{ site.what[this.language] }}
+            </p>
+            <hr>
+            <p>
+            {{ site.where[this.language] }}
+            <br>
+            {{ site.when[this.language] }}
+            </p>
         </div>
     </div>
 
 </div>
 
-{{ this.body }}
+<div class="about bloco container-fluid">
+    <div class="container">
+        <h2>{{ site.about.title[this.language] }}</h2>
+        <hr>
+
+        Texto e mapa com marcadores.
+        <a href="">a link</a>.
+
+    </div>
+</div>
+
+<div class="event bloco container-fluid">
+    <div class="container">
+        <h2>{{ site.event.title[this.language] }}</h2>
+        <hr>
+
+        Onde, quando, o que, como se vestir.
+        Mapinha do lugar.
+        <a href="">a link</a>.
+
+    </div>
+</div>
+
+{% if this.language == "en" %}
+<div class="rsvp bloco container-fluid">
+    <div class="container">
+        <h2>RSVP</h2>
+        <hr>
+
+        Bla bla bla
+
+        Link pro google form
+        <a href="">a link</a>.
+
+    </div>
+</div>
+{% endif %}
+
+<div class="gifts bloco container-fluid">
+    <div class="container">
+        <h2>{{ site.gifts.title[this.language] }}</h2>
+        <hr>
+
+        Não precisa de nada.
+
+    </div>
+</div>
+
+<div class="gallery bloco container-fluid">
+    <div class="container">
+        <h2>{{ site.gallery.title[this.language] }}</h2>
+        <hr>
+
+        Colocaremos depois do casório.
+
+    </div>
+</div>
+
+<div class="message bloco container-fluid">
+    <div class="container">
+        <h2>{{ site.message.title[this.language] }}</h2>
+        <hr>
+
+        Deixe uma mensagem para os noivos.
+
+        <!-- The Disqus comments code -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = {{ site.url }}/{{ this.url }};
+                this.page.identifier = {{ this.id }};
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://casorio-leo-e-carol.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
 
 {% endblock %}
