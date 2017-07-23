@@ -5,3 +5,6 @@ layout: page
 language: br
 order: date
 ---
+
+
+<!--All of the content is being generated in _layout/page.html-->

@@ -40,6 +40,9 @@ about:
     title:
         en: about us
         br: sobre nós
+    text:
+        en: A breif text about the two of us.
+        br: Um breve texto sobre nós dois.
 
 event:
     title:
