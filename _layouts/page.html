@@ -143,6 +143,7 @@
 {# Make the CSS Animations for the pictures #}
 
 {% block custom_css %}
+    {% set prefixes = ["-webkit-", "-moz-", "-o-", "-ms-", ""] %}
     {% set interval = 6 %}
     {% set anim_time = 6*interval %}
         .slider li span {
@@ -157,13 +158,11 @@
             background-repeat: none;
             opacity: 0;
             -webkit-backface-visibility: hidden;
-            -webkit-animation: imganim {{ anim_time }}s linear infinite 0s;
-            -moz-animation: imganim {{ anim_time }}s linear infinite 0s;
-            -o-animation: imganim {{ anim_time }}s linear infinite 0s;
-            -ms-animation: imganim {{ anim_time }}s linear infinite 0s;
-            animation: imganim {{ anim_time }}s linear infinite 0s;
+        {% for prefix in prefixes %}
+            {{ prefix }}animation: imganim {{ anim_time }}s linear infinite 0s;
+        {% endfor %}
         }
-    {% for prefix in ["-webkit-", "-moz-", "-o-", "-ms-", ""] %}
+    {% for prefix in prefixes %}
         @{{ prefix }}keyframes imganim {
             0% { opacity: 0; {{ prefix }}animation-timing-function: ease-in; }
             8% { opacity: 1; {{ prefix }}animation-timing-function: ease-out; }
@@ -177,11 +176,9 @@
         {% set timer = (loop.index - 1)*interval + delay %}
         .slider li:nth-child({{ loop.index }}) span {
             background-image: url({{ prefix }}/{{ image }});
-            -webkit-animation-delay: {{ timer }}s;
-            -moz-animation-delay: {{ timer }}s;
-            -o-animation-delay: {{ timer }}s;
-            -ms-animation-delay: {{ timer }}s;
-            animation-delay: {{ timer }}s;
+        {% for prefix in prefixes %}
+            {{ prefix }}animation-delay: {{ timer }}s;
+        {% endfor %}
         }
     {% endfor %}
 {% endblock %}
