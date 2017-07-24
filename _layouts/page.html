@@ -112,23 +112,28 @@
         <h2>{{ site.message.title[this.language] }}</h2>
         <hr>
         {{ site.message.text[this.language] }}
-
-        <!-- The Disqus comments code -->
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function () {
-                this.page.url = {{ site.url }}{{ this.url }};
-                this.page.identifier = {{ site.baseurl }}{{ this.id }};
-            };
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://casorio-leo-e-carol.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <!-- The Disqus comments code -->
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = '{{ site.url }}{{ this.url }}';
+                        this.page.identifier = '/{{ site.baseurl }}{{ this.id }}';
+                    };
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://casorio-leo-e-carol.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+            <div class="col-md-2">
+            </div>
     </div>
 </div>
 
