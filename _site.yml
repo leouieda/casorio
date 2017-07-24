@@ -76,5 +76,5 @@ rsvp:
     form: meh
 
 footer:
-    en: '<a href="/casorio/br">Clique aqui para uma versão em <strong>Português</strong></a>.'
-    br: '<a href="/casorio">Click here for a version in <strong>English</strong></a>.'
+    en: '<a href="/casorio/br">Clique aqui para uma versão em <span class="language"> Português</span></a>.'
+    br: '<a href="/casorio">Click here for a version in <span class="language">English</span></a>.'
