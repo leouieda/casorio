@@ -36,12 +36,60 @@ what:
     en: are getting married
     br: irão se casar
 
+welcome:
+    title:
+        en: Welcome
+        br: Bem-vindo
+    text:
+        en: |
+            We would like to share this moment with you.
+            <br>
+            We know that Hawaii is remote and we had very little time to prepare.
+            <br>
+            For the ones that are coming, we are very excited to see you there!
+            <br>
+            For the ones who can’t make it, we hope that this website brings
+            you a little bit closer.
+        br: |
+            We would like to share this moment with you. We know that Hawaii is
+            remote and we had very little time to prepare. For the ones that are
+            coming, we are very excited to see you there! For the ones who can’t
+            make it, we hope that this website brings you a little bit closer.
+
 about:
     title:
         en: about us
         br: sobre nós
+    him:
+        name: Leonardo Uieda
+        text:
+            en: |
+                He is a geophysicist, a professor, a programmer. He is a
+                walking wikipedia, he is sweet (but not with everybody), he is
+                the rational one. He likes traveling and ginger.
+            pt: Meh
+    her:
+        name: Ana Caroline Colombo
+        text:
+            en: |
+                She is a biologist, a teacher. She has more names than
+                Daenerys, she is a dreamer, she is the emotional one. She likes
+                dancing, talking, and chocolate.
+            pt: Meh
     text:
-        en: A breif text about the two of us.
+        en: |
+            We met at a friend’s wedding in 2011.
+            Leo was living in Rio de Janeiro and Carol had just moved to
+            Ribeirão Preto. We dated  long distance for 3 years. In 2014, Carol
+            moved to Rio to do her PhD and we moved in together. In 2016, Carol
+            went to Stony Brook to fulfill her dream of living abroad. A few
+            months later, Leo moved to Hawaii for a postdoc. The idea was to
+            try to be a little bit closer, but it turns out to be about as far
+            away as was Rio. We don’t know where we’ll be or what we’ll do.
+            What we do know is that we love each other and we will be together
+            again next year no matter what. It’s always better when we’re
+            together!
+
         br: Um breve texto sobre nós dois.
     map: |
         <iframe
@@ -49,7 +97,6 @@ about:
             width="100%" height="500px" frameborder="0"
             style="border:0; margin-top: 30px;">
         </iframe>
-
 
 event:
     title:
