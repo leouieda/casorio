@@ -67,7 +67,7 @@ about:
                 He is a geophysicist, a professor, a programmer. He is a
                 walking wikipedia, he is sweet (but not with everybody), he is
                 the rational one. He likes traveling and ginger.
-            pt: Meh
+            br: Meh
     her:
         name: Ana Caroline Colombo
         text:
@@ -75,52 +75,134 @@ about:
                 She is a biologist, a teacher. She has more names than
                 Daenerys, she is a dreamer, she is the emotional one. She likes
                 dancing, talking, and chocolate.
-            pt: Meh
+            br: Meh
     text:
         en: |
-            We met at a friend’s wedding in 2011.
-            Leo was living in Rio de Janeiro and Carol had just moved to
-            Ribeirão Preto. We dated  long distance for 3 years. In 2014, Carol
-            moved to Rio to do her PhD and we moved in together. In 2016, Carol
-            went to Stony Brook to fulfill her dream of living abroad. A few
-            months later, Leo moved to Hawaii for a postdoc. The idea was to
-            try to be a little bit closer, but it turns out to be about as far
-            away as was Rio. We don’t know where we’ll be or what we’ll do.
-            What we do know is that we love each other and we will be together
-            again next year no matter what. It’s always better when we’re
-            together!
-
+            <p>
+            We met at a friend’s wedding in 2011.  Leo was living in Rio de
+            Janeiro and Carol had just moved to Ribeirão Preto. We dated  long
+            distance for 3 years. In 2014, Carol moved to Rio to do her PhD and
+            we moved in together. In 2016, Carol went to Stony Brook to fulfill
+            her dream of living abroad. A few months later, Leo moved to Hawaii
+            for a postdoc. The idea was to try to be a little bit closer, but
+            it turns out to be about as far away as was Rio.  We don’t know
+            where we’ll be or what we’ll do in the future.  What we do know is
+            that we love each other and we will be together again next year no
+            matter what.
+            </p>
+            <p>
+            It’s always better when we’re together!
+            </p>
         br: Um breve texto sobre nós dois.
-    map: |
-        <iframe
-            src="https://www.google.com/maps/d/embed?mid=1xDLCt9W9NP68TgTMPxpF26tnS2A"
-            width="100%" height="500px" frameborder="0"
-            style="border:0; margin-top: 30px;">
-        </iframe>
+    map:
+        en: |
+            <iframe
+                src="https://www.google.com/maps/d/embed?mid=1xDLCt9W9NP68TgTMPxpF26tnS2A"
+                width="100%" height="500px" frameborder="0"
+                style="border:0; margin-top: 30px;">
+            </iframe>
+        br: |
+            <iframe
+                src="https://www.google.com/maps/d/embed?mid=1xDLCt9W9NP68TgTMPxpF26tnS2A"
+                width="100%" height="500px" frameborder="0"
+                style="border:0; margin-top: 30px;">
+            </iframe>
 
 event:
     title:
         en: the event
         br: o evento
+    text:
+        en: |
+            <p>
+            Our wedding will be a simple party (almost a picnic) at a beach
+            park.
+            <br>
+            We’ll provide non-alcoholic drinks and food, including dairy-free
+            and vegetarian options.
+            </p>
+            <h3>Where</h3>
+            We are still deciding between a few beaches in eastern
+            Oahu. We will update this information soon.
+            <h3>When</h3>
+            Saturday - August 26th, 2017 at 3:30 p.m.
+            <h3>Dress code</h3>
+            None.
+            <br>
+            We want that you feel comfortable, so you’re free to choose
+            the best outfit for you.
+            <br>
+            Just remember that we will be at the beach
+            in the afternoon and it will probably be very hot.
+            <h3>Why</h3>
+            You might be a little confused right now.
+            <em>Weren’t they are married? Why such a hurry? Why Hawaii?</em>
+            <br>
+            We have a “civil union”, which is almost exactly the same as a
+            marriage in Brazil for all practical purposes. But the U.S.
+            government doesn’t recognize it if we want to get a VISA, so that
+            would be a problem if Carol is to come live in Hawaii next year. Of
+            course, we were planning to get married anyway when we got
+            together again but this was an amazing pretext to do it in Hawaii.
+            Not too bad, right?
+        br: meh
 
 gifts:
     title:
         en: gifts
         br: presentes
+    text:
+        en: |
+            <p>
+            Your presence is the only gift that we want. We’re not living
+            together right now so we don’t need anything for the house. We
+            really appreciate your advices and hugs. So send us messages, give
+            out lots of hugs, or prepare a speech for the ceremony. If you are
+            not able to join us in Hawaii, you are more than welcome to
+            participate here with messages too.
+            </p>
+            <p>
+            If you still really want to give us something, a small contribution
+            towards our honeymoon would be appreciated.
+            </p>
+        br: meh
 
 gallery:
     title:
         en: gallery
         br: galeria
+    text:
+        en: |
+            <p>
+            We’ll upload the pictures and videos of the wedding here in the
+            future.
+            </p>
+            <p>
+            Please send us the ones you take at the event so that we can
+            have different views and perspectives of the party.
+            </p>
+        br: meh
+
 
 message:
     title:
         en: leave your message
         br: deixe sua mensagem
+    text:
+        en: |
+            Now it’s time to leave us a message. We look forward to hearing
+            from you!
+        br: meh
+
 
 rsvp:
-    text: RSVP
+    text:
+        en: Please fill out the form below as soon as possible.
+        br: meh
     form: meh
+    button:
+        en: go to the form
+        br: acesse o formulário
 
 footer:
     en: '<a href="/casorio/br">Clique aqui para uma versão em <span class="language"> Português</span></a>.'

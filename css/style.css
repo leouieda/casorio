@@ -49,8 +49,14 @@ h2 {
 }
 
 h3 {
-    font-size: 26px;
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 60px;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 hr {
@@ -105,6 +111,16 @@ ul {
     text-align: center;
 }
 
+.about img {
+    width: 50%;
+}
+
+.about h3 {
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-top: 30px;
+}
+
 .rsvp {
     background-color: #93ABA5;
     color: #ffffff;
@@ -113,6 +129,17 @@ ul {
 .rsvp hr {
     background-image: linear-gradient(to right,
      rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.rsvp button {
+    background-color: #E94E54;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.rsvp button:hover {
+    background-color: #E94E54;
 }
 
 .banner {

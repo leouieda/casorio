@@ -47,10 +47,24 @@
     <div class="container">
         <h2>{{ site.about.title[this.language] }}</h2>
         <hr>
-        <p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ prefix }}/images/him.jpg" class="img-circle">
+                <h3>{{ site.about.him.name }}</h3>
+                <p>
+                {{ site.about.him.text[this.language] }}
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ prefix }}/images/her.jpg" class="img-circle">
+                <h3>{{ site.about.her.name }}</h3>
+                <p>
+                {{ site.about.her.text[this.language] }}
+                </p>
+            </div>
+        </div>
         {{ site.about.text[this.language] }}
-        </p>
-        {{ site.about.map }}
+        {{ site.about.map[this.language] }}
     </div>
 </div>
 
@@ -58,36 +72,30 @@
     <div class="container">
         <h2>{{ site.event.title[this.language] }}</h2>
         <hr>
-
-        Onde, quando, o que, como se vestir.
-        Mapinha do lugar.
-        <a href="">a link</a>.
-
+        {{ site.event.text[this.language] }}
     </div>
 </div>
 
-{% if this.language == "en" %}
 <div class="rsvp bloco container-fluid">
     <div class="container">
         <h2>RSVP</h2>
         <hr>
-
-        Bla bla bla
-
-        Link pro google form
-        <a href="">a link</a>.
-
+        <p>
+        {{ site.rsvp.text[this.language] }}
+        </p>
+        <a href="{{ site.rsvp.form }}">
+            <button type="button" class="btn btn-primary">
+                {{ site.rsvp.button[this.language] }}
+            </button>
+        </a>
     </div>
 </div>
-{% endif %}
 
 <div class="gifts bloco container-fluid">
     <div class="container">
         <h2>{{ site.gifts.title[this.language] }}</h2>
         <hr>
-
-        Não precisa de nada.
-
+        {{ site.gifts.text[this.language] }}
     </div>
 </div>
 
@@ -95,9 +103,7 @@
     <div class="container">
         <h2>{{ site.gallery.title[this.language] }}</h2>
         <hr>
-
-        Colocaremos depois do casório.
-
+        {{ site.gallery.text[this.language] }}
     </div>
 </div>
 
@@ -105,8 +111,7 @@
     <div class="container">
         <h2>{{ site.message.title[this.language] }}</h2>
         <hr>
-
-        Deixe uma mensagem para os noivos.
+        {{ site.message.text[this.language] }}
 
         <!-- The Disqus comments code -->
         <div id="disqus_thread"></div>
