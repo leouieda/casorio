@@ -199,7 +199,7 @@ rsvp:
     text:
         en: Please fill out the form below as soon as possible.
         br: meh
-    form: meh
+    form: https://goo.gl/forms/GjLTtFY5dor0KzSn1
     button:
         en: go to the form
         br: acesse o formulário
