@@ -144,8 +144,9 @@
 
 {% block custom_css %}
     {% set prefixes = ["-webkit-", "-moz-", "-o-", "-ms-", ""] %}
-    {% set interval = 6 %}
-    {% set anim_time = 6*interval %}
+    {% set nframes = this.slider_images|length %}
+    {% set interval = 4 %}
+    {% set anim_time = interval*nframes %}
         .slider li span {
             width: 100%;
             height: 700px;
@@ -162,12 +163,14 @@
             {{ prefix }}animation: imganim {{ anim_time }}s linear infinite 0s;
         {% endfor %}
         }
+    {% set percentage = (100/nframes)|round|int %}
+    {% set transition = 2 %}
     {% for prefix in prefixes %}
         @{{ prefix }}keyframes imganim {
             0% { opacity: 0; {{ prefix }}animation-timing-function: ease-in; }
-            8% { opacity: 1; {{ prefix }}animation-timing-function: ease-out; }
-            17% { opacity: 1 }
-            25% { opacity: 0 }
+            {{ transition }}% { opacity: 1; {{ prefix }}animation-timing-function: ease-out; }
+            {{ percentage }}% { opacity: 1 }
+            {{ percentage + transition }}% { opacity: 0 }
             100% { opacity: 0 }
         }
     {% endfor %}
