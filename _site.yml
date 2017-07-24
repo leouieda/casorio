@@ -51,10 +51,17 @@ welcome:
             For the ones who can’t make it, we hope that this website brings
             you a little bit closer.
         br: |
-            We would like to share this moment with you. We know that Hawaii is
-            remote and we had very little time to prepare. For the ones that are
-            coming, we are very excited to see you there! For the ones who can’t
-            make it, we hope that this website brings you a little bit closer.
+            Gostaríamos de dividir esse momento com você.
+            <br>
+            Nós sabemos que o
+            Havaí é distante e que tivemos muito pouco tempo para preparar
+            tudo.
+            <br>
+            Para aqueles que estão vindo, nós estamos muito animados de
+            vê-los lá!
+            <br>
+            Para aqueles que não poderão comparecer, nós esperamos que este
+            website lhe permita se sentir um pouco mais perto.
 
 about:
     title:
@@ -64,18 +71,24 @@ about:
         name: Leonardo Uieda
         text:
             en: |
-                He is a geophysicist, a professor, a programmer. He is a
+                He is a geophysicist, a professor, and a programmer. He is a
                 walking wikipedia, he is sweet (but not with everybody), he is
                 the rational one. He likes traveling and ginger.
-            br: Meh
+            br: |
+                Ele é geofísico, professor, e programador. Ele é o wikipedia
+                ambulante, ele é carinhoso (mas não com todo mundo), ele é a
+                razão. Ele gosta de viajar e de gengibre.
     her:
         name: Ana Caroline Colombo
         text:
             en: |
-                She is a biologist, a teacher. She has more names than
+                She is a biologist and a teacher. She has more names than
                 Daenerys, she is a dreamer, she is the emotional one. She likes
                 dancing, talking, and chocolate.
-            br: Meh
+            br: |
+                Ela é bióloga e professora. Ela tem mais nomes do que a
+                Daenerys, ela é sonhadora, ela é a emoção. Ela gosta de dançar,
+                falar e de chocolate.
     text:
         en: |
             <p>
@@ -93,7 +106,25 @@ about:
             <p>
             It’s always better when we’re together!
             </p>
-        br: Um breve texto sobre nós dois.
+        br: |
+            <p>
+            Nós nos conhecemos em um casamento de amigos em 2011.
+            Leo estava morando no Rio de Janeiro e a Carol tinha acabado de
+            mudar para Ribeirão Preto. Nós namoramos à distância por 3 anos. Em
+            2014, a Carol se mudou para o Rio para fazer seu doutorado e nós
+            decidimos morar juntos. Em 2016, a Carol foi para Stony Brook para
+            realizar seu sonho de morar fora do país. Alguns meses depois, Leo
+            se mudou para o Havaí para fazer seu pós doc. A ideia era tentar
+            ficar um pouco mais perto, mas no final estamos tão distantes
+            quanto estaríamos se ele continuasse no Rio. Nós não sabemos onde
+            iremos estar e o que iremos fazer no futuro. O que nós sabemos é
+            que nos amamos e que iremos estar juntos novamente no próximo ano
+            não importa o que aconteça.
+            </p>
+            <p>
+            É sempre melhor quando estamos juntos!
+            </p>
+
     map:
         en: |
             <iframe
@@ -138,14 +169,42 @@ event:
             You might be a little confused right now.
             <em>Weren’t they are married? Why such a hurry? Why Hawaii?</em>
             <br>
-            We have a “civil union”, which is almost exactly the same as a
+            We have a "civil union", which is almost exactly the same as a
             marriage in Brazil for all practical purposes. But the U.S.
             government doesn’t recognize it if we want to get a VISA, so that
             would be a problem if Carol is to come live in Hawaii next year. Of
             course, we were planning to get married anyway when we got
             together again but this was an amazing pretext to do it in Hawaii.
             Not too bad, right?
-        br: meh
+        br: |
+            <p>
+            Nosso casamento será uma festa simples (quase um piquenique) na
+            praia.
+            <br>
+            Nós providenciaremos bebidas não alcoólicas e a comida, incluindo
+            opções sem leite e vegetariana.
+            </p>
+            <h3>Onde</h3>
+            Nós ainda estamos decidindo entre algumas praias ao leste de Oahu.
+            Iremos atualizar esta informação em breve.
+            <h3>Quando</h3>
+            Sábado - 26 de Agosto, 2017 às 15:30
+            <h3>Traje</h3>
+            Nós queremos que você se sinta confortável, então sinta-se livre
+            para escolher o melhor traje. Apenas se lembre que estaremos na
+            praia e provavelmente estará quente.
+            <h3>Por que</h3>
+            Você pode estar um pouco confuso agora.
+            <em>Eles não eram casados? Por que tanta pressa? Por que o
+            Havaí?</em>
+            <br>
+            Nós temos a "união estável" que é quase a mesma coisa que o
+            casamento no Brasil em termos práticos. No entanto, o governo dos
+            EUA não reconhece a união estável para a emissão do visto e isso
+            seria um problema caso a Carol vá morar no Havaí no ano que vem. É
+            claro que  estávamos planejando nos casar de qualquer forma quando
+            voltássemos a estar juntos novamente, mas este foi um fantástico
+            pretexto para fazer isso no Havaí. Nada mal, não?
 
 gifts:
     title:
@@ -165,7 +224,19 @@ gifts:
             If you still really want to give us something, a small contribution
             towards our honeymoon would be appreciated.
             </p>
-        br: meh
+        br: |
+            <p>
+            Sua presença é o único presente que nós queremos. Nós não estamos
+            morando juntos no momento, então nós não precisamos de nada para a
+            casa. Nós gostamos de conselhos e abraços. Então nos envie
+            mensagens, nos dê muitos abraços ou prepare um discurso para a
+            cerimônia. Se você não puder ir ao Havaí, você está mais do que
+            convidado a participar aqui com mensagens também.
+            </p>
+            <p>
+            Se você ainda realmente quiser nos dar algo, uma pequena
+            contribuição para nossa lua-de-mel será apreciada.
+            </p>
 
 gallery:
     title:
@@ -181,8 +252,15 @@ gallery:
             Please send us the ones you take at the event so that we can
             have different views and perspectives of the party.
             </p>
-        br: meh
-
+        br: |
+            <p>
+            Nós iremos colocar as fotos e os vídeos do casamento aqui no
+            futuro.
+            </p>
+            <p>
+            Por favor, nos envie suas fotos e vídeos do evento para que
+            possamos ter diferentes visões e perspectivas da festa.
+            </p>
 
 message:
     title:
@@ -192,13 +270,14 @@ message:
         en: |
             Now it’s time to leave us a message. We look forward to hearing
             from you!
-        br: meh
-
+        br: |
+            Agora é a hora de deixar sua mensagem. Estamos ansiosos para
+            lê-la.
 
 rsvp:
     text:
         en: Please fill out the form below as soon as possible.
-        br: meh
+        br: Por favor, preencha o formulário abaixo assim que possível.
     form: https://goo.gl/forms/GjLTtFY5dor0KzSn1
     button:
         en: go to the form
