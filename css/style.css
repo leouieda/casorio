@@ -190,6 +190,17 @@ ul {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
+.where {
+    margin-top: 30px;
+    height: 450px;
+}
+
+.where-img {
+    background-image: url(/casorio/images/kualoa.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 #disqus_thread {
     margin-top: 90px;
 }
