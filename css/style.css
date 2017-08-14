@@ -1,0 +1,220 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 200px;
+    font-family: 'PT Serif', serif;
+}
+
+footer {
+    width: 100%;
+    background-color: #93ABA5;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #eeeeee;
+    position: absolute;
+    bottom: 0;
+    min-height: 100px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer a {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 21px;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 25px;
+}
+
+h3 {
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+hr {
+    width: 35%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,
+     rgba(0, 0, 0, 0), rgba(233, 78, 84, 0.75), rgba(0, 0, 0, 0));
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #E94E54;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    color: #E94E54;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+.language {
+    font-weight: bold;
+    color: #E94E54;
+}
+
+ul {
+    margin-bottom: 31.5px;
+    padding-left: 20px;
+}
+
+.fa-ul {
+    margin-top: 10px;
+}
+
+.fa-ul li {
+    margin-bottom: 5px;
+}
+
+.bloco {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.about img {
+    width: 50%;
+}
+
+.about h3 {
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-top: 30px;
+}
+
+.bios {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.rsvp {
+    background-color: #93ABA5;
+    color: #ffffff;
+}
+
+.rsvp hr {
+    background-image: linear-gradient(to right,
+     rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.rsvp button {
+    background-color: #E94E54;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.rsvp button:hover {
+    background-color: #E94E54;
+}
+
+.banner {
+    margin: 0;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 700px;
+    background-color: #93ABA5;
+}
+
+.slider {
+    margin: 0;
+    list-style:  none;
+}
+
+.title-area {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.our-names {
+    font-family: 'Engagement', cursive;
+    font-size: 130px;
+}
+
+.what-when > p {
+    font-size: 22px;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-bottom: 5px;
+}
+
+.what-when > hr {
+    width: 35%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.where {
+    margin-top: 30px;
+    height: 450px;
+}
+
+.where-img {
+    background-image: url(/casorio/images/kualoa.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#disqus_thread {
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .title-area {
+        top: 20%;
+    }
+
+    .our-names {
+        font-size: 90px;
+    }
+
+    .what-when > p {
+        font-size: 18px;
+    }
+}

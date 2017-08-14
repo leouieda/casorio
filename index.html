@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda & Ana Caroline Colombo"/>
+
+            <meta name="keywords" content="wedding"/>
+
+
+
+    <title>Leo & Carol</title>
+
+
+    <link rel="shortcut icon" href="/casorio/images/favicon.png">
+    <link rel="stylesheet" href="/casorio/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/casorio/css/style.css">
+
+    <style>
+        .slider li span {
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: none;
+            opacity: 0;
+            -webkit-backface-visibility: hidden;
+            -webkit-animation: imganim 56s linear infinite 0s;
+            -moz-animation: imganim 56s linear infinite 0s;
+            -o-animation: imganim 56s linear infinite 0s;
+            -ms-animation: imganim 56s linear infinite 0s;
+            animation: imganim 56s linear infinite 0s;
+        }
+        @-webkit-keyframes imganim {
+            0% { opacity: 0; -webkit-animation-timing-function: ease-in; }
+            2% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+            7% { opacity: 1 }
+            9% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+        @-moz-keyframes imganim {
+            0% { opacity: 0; -moz-animation-timing-function: ease-in; }
+            2% { opacity: 1; -moz-animation-timing-function: ease-out; }
+            7% { opacity: 1 }
+            9% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+        @-o-keyframes imganim {
+            0% { opacity: 0; -o-animation-timing-function: ease-in; }
+            2% { opacity: 1; -o-animation-timing-function: ease-out; }
+            7% { opacity: 1 }
+            9% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+        @-ms-keyframes imganim {
+            0% { opacity: 0; -ms-animation-timing-function: ease-in; }
+            2% { opacity: 1; -ms-animation-timing-function: ease-out; }
+            7% { opacity: 1 }
+            9% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+        @keyframes imganim {
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            2% { opacity: 1; animation-timing-function: ease-out; }
+            7% { opacity: 1 }
+            9% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+        .slider li:nth-child(1) span {
+            background-image: url(/casorio/images/slider/01-cancun2.jpg);
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            -o-animation-delay: 1s;
+            -ms-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        .slider li:nth-child(2) span {
+            background-image: url(/casorio/images/slider/02-vinharia.jpg);
+            -webkit-animation-delay: 5s;
+            -moz-animation-delay: 5s;
+            -o-animation-delay: 5s;
+            -ms-animation-delay: 5s;
+            animation-delay: 5s;
+        }
+        .slider li:nth-child(3) span {
+            background-image: url(/casorio/images/slider/03-san-francisco.jpg);
+            -webkit-animation-delay: 9s;
+            -moz-animation-delay: 9s;
+            -o-animation-delay: 9s;
+            -ms-animation-delay: 9s;
+            animation-delay: 9s;
+        }
+        .slider li:nth-child(4) span {
+            background-image: url(/casorio/images/slider/04-chapada-diamantina.jpg);
+            -webkit-animation-delay: 13s;
+            -moz-animation-delay: 13s;
+            -o-animation-delay: 13s;
+            -ms-animation-delay: 13s;
+            animation-delay: 13s;
+        }
+        .slider li:nth-child(5) span {
+            background-image: url(/casorio/images/slider/05-despedida-paperzinha.jpg);
+            -webkit-animation-delay: 17s;
+            -moz-animation-delay: 17s;
+            -o-animation-delay: 17s;
+            -ms-animation-delay: 17s;
+            animation-delay: 17s;
+        }
+        .slider li:nth-child(6) span {
+            background-image: url(/casorio/images/slider/06-jardim-botanico.jpg);
+            -webkit-animation-delay: 21s;
+            -moz-animation-delay: 21s;
+            -o-animation-delay: 21s;
+            -ms-animation-delay: 21s;
+            animation-delay: 21s;
+        }
+        .slider li:nth-child(7) span {
+            background-image: url(/casorio/images/slider/07-port-jefferson.jpg);
+            -webkit-animation-delay: 25s;
+            -moz-animation-delay: 25s;
+            -o-animation-delay: 25s;
+            -ms-animation-delay: 25s;
+            animation-delay: 25s;
+        }
+        .slider li:nth-child(8) span {
+            background-image: url(/casorio/images/slider/08-luzes.jpg);
+            -webkit-animation-delay: 29s;
+            -moz-animation-delay: 29s;
+            -o-animation-delay: 29s;
+            -ms-animation-delay: 29s;
+            animation-delay: 29s;
+        }
+        .slider li:nth-child(9) span {
+            background-image: url(/casorio/images/slider/09-pao-de-acucar.jpg);
+            -webkit-animation-delay: 33s;
+            -moz-animation-delay: 33s;
+            -o-animation-delay: 33s;
+            -ms-animation-delay: 33s;
+            animation-delay: 33s;
+        }
+        .slider li:nth-child(10) span {
+            background-image: url(/casorio/images/slider/10-cancun1.jpg);
+            -webkit-animation-delay: 37s;
+            -moz-animation-delay: 37s;
+            -o-animation-delay: 37s;
+            -ms-animation-delay: 37s;
+            animation-delay: 37s;
+        }
+        .slider li:nth-child(11) span {
+            background-image: url(/casorio/images/slider/11-mexico.jpg);
+            -webkit-animation-delay: 41s;
+            -moz-animation-delay: 41s;
+            -o-animation-delay: 41s;
+            -ms-animation-delay: 41s;
+            animation-delay: 41s;
+        }
+        .slider li:nth-child(12) span {
+            background-image: url(/casorio/images/slider/12-beijo-no-olho.jpg);
+            -webkit-animation-delay: 45s;
+            -moz-animation-delay: 45s;
+            -o-animation-delay: 45s;
+            -ms-animation-delay: 45s;
+            animation-delay: 45s;
+        }
+        .slider li:nth-child(13) span {
+            background-image: url(/casorio/images/slider/13-recife.jpg);
+            -webkit-animation-delay: 49s;
+            -moz-animation-delay: 49s;
+            -o-animation-delay: 49s;
+            -ms-animation-delay: 49s;
+            animation-delay: 49s;
+        }
+        .slider li:nth-child(14) span {
+            background-image: url(/casorio/images/slider/14-rio.jpg);
+            -webkit-animation-delay: 53s;
+            -moz-animation-delay: 53s;
+            -o-animation-delay: 53s;
+            -ms-animation-delay: 53s;
+            animation-delay: 53s;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/casorio/css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+            Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38125837-5', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+
+
+<div class="banner">
+
+    <ul class="slider">
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+    <div class="title-area text-center container">
+        <h1 class="our-names">Leo & Carol</h1>
+        <div class="what-when">
+            <p>
+            are getting married
+            </p>
+            <hr>
+            <p>
+            Hawaii
+            <br>
+            August 26, 2017
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="welcome bloco container-fluid">
+    <div class="container">
+        <h2>Welcome</h2>
+        <hr>
+        <p>
+        We would like to share this moment with you.
+<br>
+We know that Hawaii is remote and we had very little time to prepare.
+<br>
+For the ones that are coming, we are very excited to see you there!
+<br>
+For the ones who can’t make it, we hope that this website brings
+you a little bit closer.
+
+        </p>
+    </div>
+</div>
+
+<div class="about bloco container-fluid">
+    <div class="container">
+        <h2>about us</h2>
+        <hr>
+        <div class="bios row">
+            <div class="col-md-6">
+                <img src="/casorio/images/him.jpg" class="img-circle">
+                <h3>Leonardo Uieda</h3>
+                <p>
+                He is a geophysicist, a professor, and a programmer. He is a
+walking wikipedia, he is sweet (but not with everybody), he is
+the rational one. He likes traveling and ginger.
+
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/casorio/images/her.jpg" class="img-circle">
+                <h3>Ana Caroline Colombo</h3>
+                <p>
+                She is a biologist and a teacher. She has more names than
+Daenerys, she is a dreamer, she is the emotional one. She likes
+dancing, talking, and chocolate.
+
+                </p>
+            </div>
+        </div>
+        <p>
+We met at a friend’s wedding in 2011.  Leo was living in Rio de
+Janeiro and Carol had just moved to Ribeirão Preto. We dated  long
+distance for 3 years. In 2014, Carol moved to Rio to do her PhD and
+we moved in together. In 2016, Carol went to Stony Brook to fulfill
+her dream of living abroad. A few months later, Leo moved to Hawaii
+for a postdoc. The idea was to try to be a little bit closer, but
+it turns out to be about as far away as was Rio.  We don’t know
+where we’ll be or what we’ll do in the future.  What we do know is
+that we love each other and we will be together again next year no
+matter what.
+</p>
+<p>
+It’s always better when we’re together!
+</p>
+
+        <iframe
+    src="https://www.google.com/maps/d/embed?mid=1xDLCt9W9NP68TgTMPxpF26tnS2A"
+    width="100%" height="500px" frameborder="0"
+    style="border:0; margin-top: 30px;">
+</iframe>
+
+    </div>
+</div>
+
+<div class="event bloco container-fluid">
+    <div class="container">
+        <h2>the event</h2>
+        <hr>
+        <p>
+Our wedding will be a simple party (almost a picnic) at a beach
+park.
+<br>
+We'll provide non-alcoholic drinks and food, including dairy-free
+and vegetarian options.
+</p>
+<h3>Where</h3>
+Kualoa Regional Park, 49-479 Kamehameha Hwy, Kaneohe
+<div class="where where-img">
+</div>
+<div class="where">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3270.3450251209765!2d-157.8378151!3d21.5150961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31c52275f7ca449f!2sKualoa+Regional+Park!5e1!3m2!1sen!2sus!4v1502059204453" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<h3>When</h3>
+Saturday - August 26th, 2017 at 3:30 p.m.
+<h3>Dress code</h3>
+None.
+<br>
+We want that you feel comfortable, so you’re free to choose
+the best outfit for you.
+<br>
+Just remember that we will be at the beach
+in the afternoon and it will probably be very hot.
+<h3>Why</h3>
+You might be a little confused right now.
+<em>Weren’t they already married? Why such a hurry? Why Hawaii?</em>
+<br>
+We have a "civil union", which is almost exactly the same as a
+marriage in Brazil for all practical purposes. But the U.S.
+government doesn’t recognize it if we want to get a VISA, so that
+would be a problem if Carol is to come live in Hawaii next year. Of
+course, we were planning to get married anyway when we got
+together again but this was an amazing pretext to do it in Hawaii.
+Not too bad, right?
+
+    </div>
+</div>
+
+<div class="rsvp bloco container-fluid">
+    <div class="container">
+        <h2>RSVP</h2>
+        <hr>
+        <p>
+        Please fill out the form below as soon as possible.
+        </p>
+        <a href="https://goo.gl/forms/GjLTtFY5dor0KzSn1">
+            <button type="button" class="btn btn-primary">
+                go to the form
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="gifts bloco container-fluid">
+    <div class="container">
+        <h2>gifts</h2>
+        <hr>
+        <p>
+Your presence is the only gift that we want. We’re not living
+together right now so we don’t need anything for the house. We
+really appreciate your advices and hugs. So send us messages, give
+out lots of hugs, or prepare a speech for the ceremony. If you are
+not able to join us in Hawaii, you are more than welcome to
+participate here with messages too.
+</p>
+<p>
+If you still really want to give us something, a small contribution
+towards our honeymoon would be appreciated.
+</p>
+
+    </div>
+</div>
+
+<div class="gallery bloco container-fluid">
+    <div class="container">
+        <h2>gallery</h2>
+        <hr>
+        <p>
+We’ll upload the pictures and videos of the wedding here in the
+future.
+</p>
+<p>
+Please send us the ones you take at the event so that we can
+have different views and perspectives of the party.
+</p>
+
+    </div>
+</div>
+
+<div class="message bloco container-fluid">
+    <div class="container">
+        <h2>leave your message</h2>
+        <hr>
+        Now it’s time to leave us a message. We look forward to hearing
+from you!
+
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <!-- The Disqus comments code -->
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = 'http://www.leouieda.com/casorio/index.html';
+                        this.page.identifier = '/casorio/index';
+                    };
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://casorio-leo-e-carol.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+            <div class="col-md-2">
+            </div>
+    </div>
+</div>
+
+
+    <footer>
+<div class="container">
+    <p class="text-center">
+        <a href="/casorio/br">Clique aqui para uma versão em <span class="language"> Português</span></a>.
+        <br>
+        The source code to build this site is available at
+        <a href="https://github.com/leouieda/casorio">leouieda/casorio</a>.
+        <br>
+        Inspired by
+        <a href="https://github.com/justgrimes/wedding">justgrimes/wedding</a>.
+    </p>
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/casorio/js/jquery.min.js"></script>
+    <script src="/casorio/js/bootstrap.min.js"></script>
+
+</body>
+</html>
